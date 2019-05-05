@@ -24,15 +24,9 @@ public class JdiContactForm implements TestsInit {
         contactForm.check(FULL_CONTACT);
     }
     @Test
-    public void submitContactFormSmartTest() {
+    public void submitContactFormSimpleTest() {
         contactPage.checkOpened();
-        contactFormSmart.submit(FULL_CONTACT);
-        contactFormSmart.check(FULL_CONTACT);
-    }
-    @Test
-    public void lightContactFormTest() {
-        contactPage.checkOpened();
-        lightContactForm.submit(SIMPLE_CONTACT);
-        lightContactForm.check(SIMPLE_CONTACT);
+        contactForm.submit(SIMPLE_CONTACT);
+        contactForm.check(SIMPLE_CONTACT);
     }
 }
