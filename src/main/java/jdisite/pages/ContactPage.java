@@ -6,7 +6,6 @@ import com.epam.jdi.light.elements.pageobjects.annotations.Url;
 import com.epam.jdi.light.elements.pageobjects.annotations.simple.UI;
 import jdisite.sections.ContactFormSmart;
 import jdisite.sections.ContactForm;
-import jdisite.sections.SeleniumContactForm;
 
 @Url("/contacts") @Title("Contact Form")
 public class ContactPage extends WebPage {
@@ -14,5 +13,4 @@ public class ContactPage extends WebPage {
     public static ContactFormSmart contactFormSmart;
     @UI("#contact-form")
     public static ContactForm contactForm;
-    public static SeleniumContactForm seleniumContactForm;
 }
