@@ -11,22 +11,21 @@ import static jdisite.JDISite.*;
 import static jdisite.enums.MenuOptions.ContactForm;
 import static jdisite.pages.ContactPage.*;
 
-public class ContactFormExamples implements TestsInit {
+public class JdiContactForm implements TestsInit {
     @BeforeMethod
     public void before() {
         loggedIn();
         sideMenu.select(ContactForm);
     }
-
     @Test
     public void submitContactFormTest() {
-        contactForm.submit(SIMPLE_CONTACT);
-        contactForm.check(SIMPLE_CONTACT);
+        contactForm.submit(FULL_CONTACT);
+        contactForm.check(FULL_CONTACT);
     }
     @Test
     public void submitContactFormSmartTest() {
-        contactFormSmart.submit(SIMPLE_CONTACT);
-        contactFormSmart.check(SIMPLE_CONTACT);
+        contactFormSmart.submit(FULL_CONTACT);
+        contactFormSmart.check(FULL_CONTACT);
     }
     @Test
     public void lightContactFormTest() {

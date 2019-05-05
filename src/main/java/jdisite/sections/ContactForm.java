@@ -12,12 +12,12 @@ import com.epam.jdi.light.ui.html.complex.MultiDropdown;
 import jdisite.entities.ContactInfo;
 
 public class ContactForm extends Form<ContactInfo> {
-    @UI("#passport") Checkbox passport;
     @UI("#name") TextField name;
     @UI("#last-name") TextField lastName;
     @UI("#position") TextField position;
     @UI("#passport-number") TextField passportNumber;
     @UI("#passport-seria") TextField passportSeria;
+    @UI("#passport") Checkbox passport;
     @UI("#gender") Dropdown gender;
     @UI("#religion") Combobox religion;
     @UI("#weather") MultiDropdown weather;
