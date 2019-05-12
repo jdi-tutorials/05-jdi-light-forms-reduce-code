@@ -28,6 +28,7 @@ public class JdiContactForm implements TestsInit {
         contactForm.submit(SIMPLE_CONTACT);
         contactForm.check(SIMPLE_CONTACT);
     }
+    // Light ContactForm Example
     @Test
     public void lightContactFormTest() {
         contactPage.checkOpened();
