@@ -7,14 +7,13 @@ import org.testng.annotations.Test;
 import static com.jdi.states.State.loggedIn;
 import static com.jdi.test.data.DefaultDataProvider.*;
 import static jdisite.JDISite.*;
-import static jdisite.enums.MenuOptions.ContactForm;
 import static jdisite.pages.ContactPage.*;
 
 public class JdiContactForm implements TestsInit {
     @BeforeMethod
     public void before() {
         loggedIn();
-        sideMenu.select(ContactForm);
+        sideMenu.select("Contact form");
     }
     @Test
     public void submitContactFormTest() {
@@ -27,12 +26,5 @@ public class JdiContactForm implements TestsInit {
         contactPage.checkOpened();
         contactForm.submit(SIMPLE_CONTACT);
         contactForm.check(SIMPLE_CONTACT);
-    }
-    // Light ContactForm Example
-    @Test
-    public void lightContactFormTest() {
-        contactPage.checkOpened();
-        lightContactForm.submit(SIMPLE_CONTACT);
-        lightContactForm.check(SIMPLE_CONTACT);
     }
 }

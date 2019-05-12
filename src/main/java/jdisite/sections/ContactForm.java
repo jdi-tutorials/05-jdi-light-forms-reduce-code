@@ -17,6 +17,4 @@ public class ContactForm extends Form<ContactInfo> {
     MultiDropdown weather;
     Checkbox passport, acceptConditions;
     TextArea description;
-
-    //Button submit; - you can setup default locator for submit button for all forms
 }

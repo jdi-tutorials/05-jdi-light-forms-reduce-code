@@ -18,11 +18,9 @@ public class JDISite {
     public static ContactPage contactPage;
 
     public static Form<User> loginForm;
-    @UI("#contact-form") public static Form<ContactInfo> lightContactForm;
 
     @UI("#user-icon") public static Link userIcon;
     @UI("#user-name") public static Text userName;
-    @UI(".fa-sign-out") public static Button logout;
     @UI(".sidebar-menu span") public static Menu sideMenu;
 
 }
