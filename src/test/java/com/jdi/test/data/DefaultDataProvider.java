@@ -14,10 +14,10 @@ public class DefaultDataProvider {
         c.description = "JDI - awesome UI autoamtion tool"; }
     );
 
-    public static ContactInfo FULL_CONTACT = new ContactInfo().set(c -> {
+    public static final ContactInfo FULL_CONTACT = new ContactInfo().set(c -> {
         c.name = "Roman"; c.lastName = "Full Contact"; c.position = "ChiefQA";
         c.religion = "Other"; c.weather = "Sun, Snow"; c.acceptConditions = true;
         c.gender = "Female"; c.passportNumber = 4321; c.passportSeria = 123456;
-        c.description = "JDI - awesome UI automation tool"; }
+        c.passport = true; c.description = "JDI - awesome UI automation tool"; }
     );
 }

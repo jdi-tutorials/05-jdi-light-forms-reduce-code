@@ -1,7 +1,6 @@
 package jdisite.sections;
 
 import com.epam.jdi.light.elements.composite.Form;
-import com.epam.jdi.light.ui.html.common.Button;
 import com.epam.jdi.light.ui.html.common.Checkbox;
 import com.epam.jdi.light.ui.html.common.TextArea;
 import com.epam.jdi.light.ui.html.common.TextField;
