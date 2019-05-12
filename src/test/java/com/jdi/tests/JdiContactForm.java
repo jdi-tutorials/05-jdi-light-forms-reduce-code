@@ -5,7 +5,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static com.jdi.states.State.loggedIn;
-import static com.jdi.states.State.loggedOut;
 import static com.jdi.test.data.DefaultDataProvider.*;
 import static jdisite.JDISite.*;
 import static jdisite.enums.MenuOptions.ContactForm;
@@ -24,10 +23,10 @@ public class JdiContactForm implements TestsInit {
         contactForm.check(FULL_CONTACT);
     }
     @Test
-    public void submitContactFormSmartTest() {
+    public void simpleContactFormTest() {
         contactPage.checkOpened();
-        contactFormSmart.submit(FULL_CONTACT);
-        contactFormSmart.check(FULL_CONTACT);
+        contactForm.submit(SIMPLE_CONTACT);
+        contactForm.check(SIMPLE_CONTACT);
     }
     @Test
     public void lightContactFormTest() {

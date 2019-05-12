@@ -5,8 +5,7 @@ import jdisite.entities.User;
 
 public class DefaultDataProvider {
     public static User ROMAN = new User().set(c -> {
-        c.name = "Roman";
-        c.password = "Jdi1234";}
+        c.name = "Roman"; c.password = "Jdi1234";}
     );
 
     public static ContactInfo SIMPLE_CONTACT = new ContactInfo().set(c -> {
