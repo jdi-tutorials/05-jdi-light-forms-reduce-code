@@ -5,9 +5,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static com.jdi.states.State.loggedIn;
-import static com.jdi.test.data.DefaultDataProvider.*;
-import static jdisite.JDISite.*;
-import static jdisite.pages.ContactPage.*;
+import static com.jdi.test.data.DefaultDataProvider.FULL_CONTACT;
+import static com.jdi.test.data.DefaultDataProvider.SIMPLE_CONTACT;
+import static jdisite.JDISite.contactPage;
+import static jdisite.JDISite.sideMenu;
+import static jdisite.pages.ContactPage.contactForm;
 
 public class JdiContactForm implements TestsInit {
     @BeforeMethod
