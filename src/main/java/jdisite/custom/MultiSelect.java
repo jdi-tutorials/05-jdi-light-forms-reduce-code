@@ -2,28 +2,16 @@ package jdisite.custom;
 
 import com.epam.jdi.light.asserts.generic.UISelectAssert;
 import com.epam.jdi.light.common.JDIAction;
-import com.epam.jdi.light.common.TextTypes;
-import com.epam.jdi.light.elements.base.JDIBase;
 import com.epam.jdi.light.elements.base.UIListBase;
 import com.epam.jdi.light.elements.common.UIElement;
 import com.epam.jdi.light.elements.complex.WebList;
 import com.epam.jdi.light.elements.interfaces.base.HasLabel;
-import com.epam.jdi.light.elements.interfaces.complex.IsDropdown;
-import com.epam.jdi.light.elements.pageobjects.annotations.GetAny;
-import com.epam.jdi.light.elements.pageobjects.annotations.GetTextAs;
 import com.epam.jdi.light.elements.pageobjects.annotations.locators.UI;
-import org.openqa.selenium.By;
 
 import java.util.List;
 
-import static com.epam.jdi.light.common.TextTypes.*;
-import static com.epam.jdi.light.driver.WebDriverByUtils.fillByTemplate;
-import static com.epam.jdi.light.elements.init.UIFactory.$;
-import static com.epam.jdi.light.elements.init.UIFactory.$$;
 import static com.epam.jdi.light.logger.LogLevels.DEBUG;
-import static com.epam.jdi.tools.EnumUtils.getEnumValues;
-import static com.epam.jdi.tools.LinqUtils.*;
-import static java.util.Arrays.asList;
+import static com.epam.jdi.tools.LinqUtils.map;
 import static org.jsoup.helper.StringUtil.isBlank;
 
 public class MultiSelect extends UIListBase<UISelectAssert> implements HasLabel {
